@@ -10,6 +10,6 @@ RUN mvn -f /home/app/pom.xml clean package -DskipTests
 # Pokretanje aplikacije
 #
 FROM openjdk:18-jdk-slim
-COPY --from=build /home/app/target/ednevnik.jar /usr/local/lib/ednevnik.jar
+COPY --from=build /home/app/target/SpringBoot.jar /usr/local/lib/SpringBoot.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/ednevnik.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/SpringBoot.jar"]
