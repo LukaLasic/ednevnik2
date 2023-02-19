@@ -16,6 +16,7 @@ services:
     networks:
       - ednevnik-network
     environment:
+      - MYSQL_ROOT_PASSWORD=lozinka
       - MYSQL_DATABASE=role
     volumes:
       - mysql-data:/var/lib/mysql
