@@ -10,6 +10,6 @@ RUN mvn -f /home/app/pom.xml clean package -DskipTests
 # Pokretanje aplikacije
 #
 FROM openjdk:18-jdk-slim
-COPY --from=build /home/app/target/SpringBootRegistrationLogin.jar /usr/local/lib/SpringBoot1.jar
+COPY --from=build /home/app/target/MuzikaApplication-0.0.1-SNAPSHOT.jar /usr/local/lib/musicstore.jar
 EXPOSE 80
-ENTRYPOINT ["java","-jar","/usr/local/lib/SpringBoot1.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/musicstore.jar"]
