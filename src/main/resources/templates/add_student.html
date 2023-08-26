@@ -35,7 +35,7 @@
 
 
     <div class="form-group row">
-      <label class="col-4 col-form-label">Ocjena Matematikek </label>
+      <label class="col-4 col-form-label">Ocjena Matematike </label>
       <div class="col-8">
         <input th:unless="${#fields.hasErrors('matematika')}" type="number" th:field="*{matematika}" class="form-control"/>
         <input th:if="${#fields.hasErrors('matematika')}" type="number" th:field="*{matematika}"
@@ -43,7 +43,7 @@
         <div th:if="${#fields.hasErrors('matematika')}" th:errors="*{matematika}" class="invalid-feedback"></div>
       </div>
     </div>
-    <div class="form-group row2">
+    <div class="form-group row">
       <label class="col-4 col-form-label">Ocjena Hrvatski </label>
       <div class="col-8">
         <input th:unless="${#fields.hasErrors('hrvatski_jezik')}" type="number" th:field="*{hrvatski_jezik}" class="form-control"/>
